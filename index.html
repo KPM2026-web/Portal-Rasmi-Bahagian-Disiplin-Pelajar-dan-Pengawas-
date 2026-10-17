@@ -213,6 +213,7 @@
             color: var(--text-dark);
             transition: all 0.3s;
             backdrop-filter: blur(5px);
+            z-index: 10;
         }
 
         .slider-btn:hover {
@@ -415,11 +416,13 @@
         <!-- 1. UTAMA -->
         <section id="utama" class="page-section active">
             <div class="slider-container">
+                <!-- Slaid 1 -->
                 <div class="slide active">
                     <img src="https://i.postimg.cc/TwVmv4RS/Tambah-tajuk-kecil-(3).png" alt="Slide 1">
                 </div>
+                <!-- Slaid 2 (Imej Baharu) -->
                 <div class="slide">
-                    <img src="https://i.postimg.cc/L5yJHdGk/1-97b6b72f-(1).webp" alt="Slide 2">
+                    <img src="https://i.postimg.cc/d0kM14nH/Tambah-tajuk-kecil-(7).png" alt="Slide 2">
                 </div>
                 <button class="slider-btn prev-btn" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
                 <button class="slider-btn next-btn" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
