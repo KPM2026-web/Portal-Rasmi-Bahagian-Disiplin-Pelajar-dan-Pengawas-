@@ -162,7 +162,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Dilaraskan mengikut nisbah 1500x500px (nisbah 3:1) */
+        /* Kontena slaid diselaraskan mengikut saiz nisbah 1500x500px */
         .slider-container {
             position: relative;
             width: 100%;
@@ -171,7 +171,7 @@
             overflow: hidden;
             box-shadow: var(--shadow);
             margin-bottom: 30px;
-            background-color: #e2e8f0;
+            background-color: #ffffff; /* Latar belakang putih untuk poster 1500x500px */
         }
 
         .slide {
@@ -194,14 +194,14 @@
         .slide img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Tukar kepada 'contain' jika gambar terpotong di tepi */
+            object-fit: contain; /* Memastikan poster 1500x500px terpapar penuh tanpa terpotong */
         }
 
         .slider-btn {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.8);
             border: none;
             width: 45px;
             height: 45px;
@@ -215,6 +215,7 @@
             transition: all 0.3s;
             backdrop-filter: blur(5px);
             z-index: 10;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .slider-btn:hover {
@@ -375,7 +376,7 @@
                 grid-template-columns: 1fr;
             }
             .slider-container {
-                height: 260px; /* Dilaraskan untuk paparan mudah alih */
+                height: 220px; /* Dilaraskan untuk paparan mudah alih */
             }
         }
     </style>
@@ -421,7 +422,7 @@
                 <div class="slide active">
                     <img src="https://i.postimg.cc/TwVmv4RS/Tambah-tajuk-kecil-(3).png" alt="Slide 1">
                 </div>
-                <!-- Slaid 2 -->
+                <!-- Slaid 2 (Poster 1500x500px terpapar penuh) -->
                 <div class="slide">
                     <img src="https://i.postimg.cc/d0kM14nH/Tambah-tajuk-kecil-(7).png" alt="Slide 2">
                 </div>
